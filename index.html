@@ -1,209 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
 
-  <body>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
 
-    <!-- HEADER -->
-    <header class="header">
-      <a href="#home" class="logo">Luke <span>Peterson</span></a>
+<body>
 
-      <i class="bx bx-menu" id="menu-icon"></i>
+  <!-- HEADER -->
+  <header class="header">
+    <a href="#home" class="logo">Luke <span>Peterson</span></a>
 
-      <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-      </nav>
+    <i class="bx bx-menu" id="menu-icon"></i>
 
-      <a href="mailto:peters133@rowan.edu" class="btn">Contact Me</a>
-    </header>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </nav>
 
-    <!-- HOME -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h1>Hi, I'm <span>Luke</span></h1>
+    <a href="mailto:peters133@rowan.edu" class="btn">Contact Me</a>
+  </header>
 
-        <p>
-          Hi, my name is Luke Peterson and I'm an undergraduate Computer Science
-          student at Rowan University. Fields I'm interested in are finance,
-          sports, legal, and defense.
-        </p>
+  <!-- HOME -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hi, I'm <span>Luke</span></h1>
 
-        <div class="social-icons">
-          <a href="https://github.com/lukepeterrson" target="_blank">
-            <i class="devicon-github-plain"></i>
-          </a>
+      <p>
+        Hi, my name is Luke Peterson and I'm an undergraduate Computer Science
+        student at Rowan University.
+      </p>
 
-          <a href="https://www.linkedin.com/in/lukepeterson777/" target="_blank">
-            <i class="devicon-linkedin-plain"></i>
-          </a>
-        </div>
-
-        <a href="mailto:peters133@rowan.edu" class="btn">Contact</a>
-      </div>
-
-      <div class="home-img">
-        <img src="me_side.jpeg" alt="Luke side profile" />
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="me_selfie.JPG" alt="Luke selfie" />
-      </div>
-
-      <div class="about-content">
-        <h2>About <span>Me</span></h2>
-
-        <p>
-          The fields I am interested in are finance, sports, defense, and legal.
-          I love music, sports, traveling, and trying new things.
-        </p>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="skills" id="skills">
-      <h2 class="heading">Skills</h2>
-
-      <div class="skills-container">
-
-        <div class="skill-box">
-          <div class="skill-info">
-            <div class="skill-icons">
-              <i class="devicon-html5-plain"></i>
-              <i class="devicon-css3-plain"></i>
-            </div>
-            <h4>Web Development</h4>
-            <p>
-              Experience with HTML and CSS, as well as building databases for
-              full-stack web apps that display large datasets from SQL queries.
-            </p>
-          </div>
-        </div>
-
-        <div class="skill-box">
-          <div class="skill-info">
-            <div class="skill-icons">
-              <i class="devicon-java-plain"></i>
-              <i class="devicon-python-plain"></i>
-              <i class="devicon-csharp-plain"></i>
-            </div>
-            <h4>Programming</h4>
-            <p>
-              Strong background in Java, with experience in Python, C, and
-              JavaScript. Always learning new languages.
-            </p>
-          </div>
-        </div>
-
-        <div class="skill-box">
-          <div class="skill-info">
-            <div class="skill-icons">
-              <i class="devicon-linux-plain"></i>
-            </div>
-            <h4>Linux Command Line</h4>
-            <p>
-              Familiar with tools like sed and grep, and comfortable with file
-              management and manipulation.
-            </p>
-          </div>
-        </div>
-
-        <div class="skill-box">
-          <div class="skill-info">
-            <div class="skill-icons">
-              <i class="devicon-unity-plain"></i>
-            </div>
-            <h4>Unity Game Development</h4>
-            <p>
-              Built multiple games in Unity, gaining experience with C# and game
-              development concepts.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="projects" id="projects">
-      <h2 class="heading">Projects</h2>
-
-      <div class="projects-box">
-
-        <div class="project-card">
-          <img src="Screenshot 2026-02-12 122755.png" alt="NBA Project" />
-          <h3>NBA All-Star Image Glossary</h3>
-          <p>
-            Web app using Aiven, Render, and MySQL to display images of notable
-            NBA players by year.
-          </p>
-          <a href="https://notable-nba-players.onrender.com/" target="_blank" class="btn">Review Project</a>
-        </div>
-
-        <div class="project-card">
-          <img src="diceRollProject.png" alt="Dice Game" />
-          <h3>Dice Roller</h3>
-          <p>
-            Browser game simulating street craps—perfect when you don't have
-            real dice.
-          </p>
-          <a href="https://lukepeterrson.github.io/Shooting-Dice-Project/" target="_blank" class="btn">Play!</a>
-        </div>
-
-        <div class="project-card">
-          <img src="wip.jpg" alt="Blackjack" />
-          <h3>Blackjack</h3>
-          <p>Python blackjack game (finished, needs publishing).</p>
-        </div>
-
-        <div class="project-card">
-          <img src="wip.jpg" alt="Silver Predictor" />
-          <h3>Silver Price Predictor</h3>
-          <p>Currently in planning stages.</p>
-        </div>
-
-        <div class="project-card">
-          <img src="wip.jpg" alt="Scrollbox" />
-          <h3>Scrollbox</h3>
-          <p>Finished project, pending publication.</p>
-        </div>
-
-        <div class="project-card">
-          <img src="urhere.jpg" alt="Portfolio site" />
-          <h3>This Website</h3>
-          <p>Thanks for visiting!</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
       <div class="social-icons">
         <a href="https://github.com/lukepeterrson" target="_blank">
-          <i class="bx bxl-github"></i>
+          <i class="devicon-github-plain"></i>
         </a>
 
         <a href="https://www.linkedin.com/in/lukepeterson777/" target="_blank">
-          <i class="bx bxl-linkedin-square"></i>
+          <i class="devicon-linkedin-plain"></i>
         </a>
       </div>
-    </footer>
 
-    <script src="script.js"></script>
+      <a href="mailto:peters133@rowan.edu" class="btn">Contact</a>
+    </div>
 
-  </body>
+    <div class="home-img">
+      <img src="me_side.jpeg" alt="Luke side profile" />
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="me_selfie.JPG" alt="Luke selfie" />
+    </div>
+
+    <div class="about-content">
+      <h2>About <span>Me</span></h2>
+
+      <p>
+        The fields I am interested in are Software Development, Machine Learning, and Quantum Computing.
+        I love music, sports, traveling, and trying new things.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <h2 class="heading">Skills</h2>
+
+    <div class="skills-container">
+
+      <div class="skill-box">
+        <div class="skill-info">
+          <div class="skill-icons">
+            <i class="devicon-java-plain"></i>
+            <i class="devicon-python-plain"></i>
+            <i class="devicon-csharp-plain"></i>
+          </div>
+          <h4>Programming</h4>
+          <p>
+            Strong background in Java, with experience in Python, C, and
+            JavaScript. Always learning new languages.
+          </p>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-info">
+          <div class="skill-icons">
+            <i class="devicon-html5-plain"></i>
+            <i class="devicon-css3-plain"></i>
+          </div>
+          <h4>Web Development</h4>
+          <p>
+            Experience with HTML and CSS, as well as building databases for
+            full-stack web apps that display large datasets from SQL queries.
+          </p>
+        </div>
+      </div>
+
+
+
+      <div class="skill-box">
+        <div class="skill-info">
+          <div class="skill-icons">
+            <i class="devicon-linux-plain"></i>
+            <i class="devicon-redhat-plain"></i>
+          </div>
+          <h4>Linux Terminal</h4>
+          <p>
+            Familiar with file management and manipulation in Linux Terminal and Red Hat.
+          </p>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-info">
+          <div class="skill-icons">
+            <i class="devicon-mysql-plain"></i>
+          </div>
+          <h4>MySQL</h4>
+          <p>
+            Organized and queried through datasets for various projects.
+          </p>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-info">
+          <div class="skill-icons">
+            <i class="devicon-digitalocean-plain"></i>
+          </div>
+          <h4>Digital Ocean</h4>
+          <p>
+            Used Digital Ocean to manage deployed SQL databases.
+          </p>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-info">
+          <div class="skill-icons">
+            <i class="devicon-unity-plain"></i>
+            <i class="devicon-csharp-plain"></i>
+          </div>
+          <h4>Unity Game Development</h4>
+          <p>
+            Built multiple games in Unity, gaining experience with C# and game
+            development concepts.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <h2 class="heading">Projects</h2>
+
+    <div class="projects-box">
+
+      <div class="project-card">
+        <img src="Screenshot 2026-02-12 122755.png" alt="NBA Project" />
+        <h3>NBA All-Star Image Glossary</h3>
+        <p>
+          Web app using Aiven, Render, and MySQL to display images of notable
+          NBA players by year.
+        </p>
+        <a href="https://notable-nba-players.onrender.com/" target="_blank" class="btn">Review Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="diceRollProject.png" alt="Dice Game" />
+        <h3>Dice Roller</h3>
+        <p>
+          Browser game simulating street craps—perfect when you don't have
+          real dice.
+        </p>
+        <a href="https://lukepeterrson.github.io/Shooting-Dice-Project/" target="_blank" class="btn">Play!</a>
+      </div>
+
+      <div class="project-card">
+        <img src="wip.jpg" alt="Blackjack" />
+        <h3>Blackjack</h3>
+        <p>Python blackjack game (finished, needs publishing).</p>
+      </div>
+
+      <div class="project-card">
+        <img src="wip.jpg" alt="Silver Predictor" />
+        <h3>Silver Price Predictor</h3>
+        <p>Currently in planning stages.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="wip.jpg" alt="Scrollbox" />
+        <h3>Scrollbox</h3>
+        <p>Finished project, pending publication.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="urhere.jpg" alt="Portfolio site" />
+        <h3>This Website</h3>
+        <p>Thanks for visiting!</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://github.com/lukepeterrson" target="_blank">
+        <i class="bx bxl-github"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/lukepeterson777/" target="_blank">
+        <i class="bx bxl-linkedin-square"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
 </html>
